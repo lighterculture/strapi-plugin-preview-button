@@ -19,6 +19,7 @@ const parseUrl = ( config, data ) => {
       [ key ]: val,
     };
   }, {} );
+
   const params = Object.entries( config?.query ?? {} ).reduce( ( acc, [ key, val ] ) => {
     return {
       ...acc,
